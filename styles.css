@@ -390,7 +390,7 @@
 .technical-specifications-button button {
   background-color: #111827;
   color: #ffffff;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -400,9 +400,79 @@
 }
 
 .technical-specifications-button img {
-    height: 16px;
-    width: 16px;
-    margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+.built-to-last {
+  background-color: #ffffff;
+  color: #0d0d0d;
+  padding: 0 100px;
+}
+
+.built-to-last-main {
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+.built-to-last-heading {
+  margin-top: 120px;
+}
+
+.built-to-last-heading h1 {
+  color: #0D0D0D;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.built-to-last-heading h4 {
+  color: #6A7077;
+  font-size: 18px;
+  font-weight: 400;
+  width: 800px;
+  margin-top: 18px;
+}
+
+.built-to-last-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 18px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon img {
+  width: 25px;
+  height: 25px;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0D0D0D;
+  margin-top: 14px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #535A61;
+  margin-top: 12px;
 }
 
 /* 1600 & 1440 */
