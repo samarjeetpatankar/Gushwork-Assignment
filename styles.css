@@ -423,19 +423,18 @@
   margin-top: 56px;
 }
 
-
 .built-to-last-heading {
   margin-top: 50px;
 }
 
 .built-to-last-heading h1 {
-  color: #0D0D0D;
+  color: #0d0d0d;
   font-size: 46px;
   font-weight: 700;
 }
 
 .built-to-last-heading h4 {
-  color: #6A7077;
+  color: #6a7077;
   font-size: 18px;
   font-weight: 400;
   width: 800px;
@@ -467,14 +466,14 @@
 .card h2 {
   font-size: 20px;
   font-weight: 600;
-  color: #0D0D0D;
+  color: #0d0d0d;
   margin-top: 14px;
 }
 
 .card p {
   font-size: 16px;
   font-weight: 400;
-  color: #535A61;
+  color: #535a61;
   margin-top: 12px;
 }
 
@@ -485,7 +484,7 @@
 }
 
 .built-to-last-button button {
-  background-color: #2B3990;
+  background-color: #2b3990;
   color: #ffffff;
   border: 1px solid #ffffff;
   font-size: 16px;
@@ -494,6 +493,84 @@
   border-radius: 12px;
   width: 174px;
   height: 52px;
+}
+
+.faq {
+  background-image: url("./images/built_to_last_background.png");
+  background-size: cover;
+  background-position: center;
+  color: #0d0d0d;
+  padding: 0 100px;
+}
+
+.faq-main {
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 56px;
+  margin-bottom: 90px;
+}
+
+.faq-heading h1 {
+  color: #111827;
+  font-size: 44px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.faq-frequently {
+  color: #2b3990;
+}
+
+.faq-card-expanded {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 25px;
+  position: relative;
+}
+
+.faq-card-closed {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 23px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 23px;
+  position: relative;
+}
+
+.faq-card-closed img {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 24px;
+  height: 24px;
+}
+
+.faq-card-expanded img {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 24px;
+  height: 24px;
+}
+
+.faq-question {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.faq-answer {
+  color: #535a61;
+  font-size: 16px;
+  margin-top: 12px;
 }
 
 /* 1600 & 1440 */
