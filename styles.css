@@ -848,7 +848,7 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 7px;
-   margin-top: 5px;
+  margin-top: 5px;
 }
 
 .advanced-hdpe-block-bottom-checkpoint p {
@@ -860,6 +860,102 @@
 .advanced-hdpe-block-bottom-checkpoint img {
   width: 15px;
   height: 15px;
+}
+
+.trusted-performance {
+  background-image: url("./images/built_to_last_background.png");
+  background-size: cover;
+  background-position: center;
+  color: #0d0d0d;
+  padding: 0 100px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e1e3e8;
+}
+
+.trusted-performance-main {
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.trusted-performance-heading {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.trusted-performance-heading h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0d0d0d;
+  margin: 20px auto 0;
+  width: 790px;
+}
+
+.trusted-performance-heading p {
+  font-size: 18px;
+  color: #4d545c;
+  margin: 20px auto 0;
+  text-align: center;
+  width: 681px;
+}
+
+.trusted-performance-review {
+  margin: 0 -100px;
+  height: 420px;
+  width: 420px;
+  border: 1px solid #e1e3e8;
+  background-color: #f7f8f9;
+  padding: 32px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 66px !important;
+}
+
+.trusted-performance-review-quote {
+  height: 24px;
+  width: 31px;
+}
+
+.trusted-performance-review-top h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0d0d0d;
+  margin-top: 23px;
+}
+
+.trusted-performance-review-top p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #535a61;
+  margin-top: 21px;
+  line-height: 23px;
+}
+
+.trusted-performance-review-bottom {
+  display: flex;
+}
+
+.trusted-performance-review-bottom img {
+  height: 48px;
+  width: 48px;
+  margin-right: 12px;
+}
+
+.trusted-performance-review-bottom h2 {
+  font-size: 16px;
+  color: #0d0d0d;
+  margin-top: 5px;
+}
+
+.trusted-performance-review-bottom p {
+  font-size: 12px;
+  color: #535a61;
+  margin-top: 4px;
 }
 
 /* 1600 & 1440 */
