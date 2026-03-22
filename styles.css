@@ -821,8 +821,10 @@
   height: 315px;
 }
 
-.advanced-hdpe-block-bottom-left{
-  align-items: center;
+.advanced-hdpe-block-bottom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .advanced-hdpe-block-bottom-left h1 {
@@ -831,12 +833,14 @@
   font-weight: 600;
 }
 
-.advanced-hdpe-block-bottom-left p {
+.advanced-hdpe-block-bottom-left-text {
   font-size: 18px;
   color: #4d545c;
   font-weight: 400;
   line-height: 25px;
   width: 520px;
+  margin-top: 14px;
+  margin-bottom: 30px;
 }
 
 .advanced-hdpe-block-bottom-checkpoint {
@@ -844,6 +848,7 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 7px;
+   margin-top: 5px;
 }
 
 .advanced-hdpe-block-bottom-checkpoint p {
