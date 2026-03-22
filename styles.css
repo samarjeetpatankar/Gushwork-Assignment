@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 /* Navbar */
@@ -301,6 +301,38 @@
 
 .trusted-logos img {
   height: 40px;
+}
+
+.technical-specifications {
+  background-color: #111827;
+  color: #ffffff;
+}
+
+.technical-specifications-main {
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.technical-specifications-heading {
+  margin-top: 135px;
+  margin-bottom: 135px;
+}
+
+.technical-specifications-heading h1 {
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.technical-specifications-heading h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  width: 800px;
+  margin-top: 18px;
 }
 
 /* 1600 & 1440 */
