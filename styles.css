@@ -682,16 +682,27 @@
   width: 68px;
 }
 
+.versatile-applications-carousel-list {
+  display: flex;
+  gap: 24px;
+  overflow: hidden;
+  padding: 24px 0 50px;
+  margin: 0 -100px;
+}
+
 .versatile-applications-carousel {
   position: relative;
-  margin: 50px -100px 0;
+  flex: 0 0 420px;
+  margin: 0;
   width: 420px;
+  overflow: hidden;
 }
 
 .versatile-applications-carousel-image {
   height: 420px;
   width: 420px;
   border-radius: 15px;
+  object-fit: cover;
 }
 
 .carousel-text {
