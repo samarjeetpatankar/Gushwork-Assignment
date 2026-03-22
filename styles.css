@@ -50,7 +50,7 @@
 }
 
 /* Button */
-button {
+.contact-us-button {
   background-color: #2b3990;
   color: #ffffff;
   border: none;
@@ -159,13 +159,122 @@ button {
 }
 
 .hero-second-right-heading {
-  margin-top: 30px;
+  margin-top: 25px;
   width: 570px;
 }
 
 .hero-second-right-heading h1 {
   font-size: 53px;
   font-weight: 700;
+}
+
+.hero-second-right-checkpoints {
+  margin-top: 23px;
+}
+
+.hero-second-right-checkpoint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.hero-second-right-checkpoint img {
+  width: 14px;
+  height: 14px;
+}
+
+.hero-second-right-checkpoint p {
+  margin: 0;
+  color: #0d0d0d;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-second-right-price-range {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 570px;
+}
+
+.price-title {
+  font-size: 14px;
+  color: #6a7077;
+  font-weight: 500;
+}
+
+.price-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0d0d0d;
+  margin: 12px 0 15px 0;
+}
+
+.price-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  padding: 9px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.shipping {
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.returns {
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.certifications {
+  background: #f3f4f6;
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #0d0d0d;
+  font-weight: 500;
+}
+
+.hero-second-right-quote-button {
+  margin-top: 20px;
+}
+
+.hero-second-right-quote-button {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-second-right-quote-button button {
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.quote-btn {
+  background-color: #2B3990;
+  color: #FFFFFF;
+  border: none;
+}
+
+.specs-btn {
+  background-color: transparent;
+  color: #2B3990;
+  border: 1.5px solid #2B3990;
 }
 
 /* 1600 & 1440 */
