@@ -306,6 +306,7 @@
 .technical-specifications {
   background-color: #111827;
   color: #ffffff;
+  padding: 0 100px;
 }
 
 .technical-specifications-main {
@@ -314,11 +315,11 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .technical-specifications-heading {
   margin-top: 135px;
-  margin-bottom: 135px;
 }
 
 .technical-specifications-heading h1 {
@@ -333,6 +334,75 @@
   font-weight: 400;
   width: 800px;
   margin-top: 18px;
+}
+
+.technical-specifications-table {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #374151;
+  border: 1px solid #374151;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.table-header-item {
+  padding: 18px 24px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #374151;
+  border-left: 1px solid #374151;
+  border-right: 1px solid #374151;
+  background-color: #1f2937;
+}
+
+.table-cell {
+  padding: 18px 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.table-row:last-child {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.technical-specifications-button {
+  margin-top: 59px;
+  text-align: center;
+  margin-bottom: 135px;
+}
+
+.technical-specifications-button button {
+  background-color: #111827;
+  color: #ffffff;
+  border: 1px solid #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 325px;
+  height: 52px;
+}
+
+.technical-specifications-button img {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
 }
 
 /* 1600 & 1440 */
