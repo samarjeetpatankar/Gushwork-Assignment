@@ -130,7 +130,7 @@
 
 .hero-second-right {
   margin-top: 15px;
-  margin-left: 32px;
+  margin-left: 70px;
 }
 
 .main-certified {
@@ -266,15 +266,41 @@
 }
 
 .quote-btn {
-  background-color: #2B3990;
-  color: #FFFFFF;
+  background-color: #2b3990;
+  color: #ffffff;
   border: none;
 }
 
 .specs-btn {
   background-color: transparent;
-  color: #2B3990;
-  border: 1.5px solid #2B3990;
+  color: #2b3990;
+  border: 1.5px solid #2b3990;
+}
+
+.hero-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 72px;
+}
+
+.hero-bottom p {
+  color: #878b94;
+  font-size: 16px;
+}
+
+.trusted-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 34px;
+  width: 100%;
+}
+
+.trusted-logos img {
+  height: 40px;
 }
 
 /* 1600 & 1440 */
