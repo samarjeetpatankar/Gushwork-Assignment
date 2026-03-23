@@ -1933,6 +1933,19 @@ body {
   .faq-card-email-right button{
     width: 100%;
   }
+  .versatile-applications{
+     padding: 1px 14px 1px 14px;
+  }
+  .versatile-applications-heading{
+    width: 100%;
+    margin-top: 45px;
+  }
+  .versatile-applications-heading h1{
+    font-size: 36px;
+  }
+  .versatile-applications-heading p{
+    font-size: 16px;
+  }
 }
 
 /* 360 */
