@@ -1907,7 +1907,7 @@ body {
   }
   .faq {
     border-top: 1px solid #e1e3e8;
-    padding: 1px 14px 0px 14px;
+    padding: 1px 14px 1px 14px;
   }
   .faq-main {
     margin-top: 0px;
@@ -1919,6 +1919,19 @@ body {
   .faq-question{
     font-weight: 500;
     width: 90%;
+  }
+  .faq-card-email{
+    display: block;
+  }
+  .faq-card-email-right{
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .faq-card-email-right input{
+    width: 100%;
+  }
+  .faq-card-email-right button{
+    width: 100%;
   }
 }
 
