@@ -340,6 +340,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   width: 570px;
+  border: 1px solid #CFD1D4;
 }
 
 .price-title {
@@ -1718,13 +1719,138 @@ body {
 /* 800 */
 @media (max-width: 800px) {
   .site-header {
-    padding: 0 48px;
+    padding: 0 10px;
+  }
+  .nav-right {
+    display: none;
   }
   .navbar {
     padding: 0;
   }
   .hero-section {
-    padding: 0 100px;
+    padding: 1px 10px 62px 10px;
+    height: auto;
+  }
+
+  .trusted-logos img{
+    height: 30px;
+  }
+
+  .hero-content {
+    display: block;
+  }
+
+  .hero-second {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-second-left,
+  .hero-second-right {
+    display: contents;
+  }
+
+  .image-magnifier-container {
+    display: block;
+    width: 100%;
+    order: 4;
+  }
+
+  .hero-second-left-image {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .hero-second-left-bottom-white-image {
+    width: 100%;
+    margin-top: -12px;
+    overflow-x: auto;
+    order: 5;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-bottom{
+    margin-top: 40px;
+  }
+  .hero-second-left-bottom-white-image img:nth-child(n + 5) {
+    display: none;
+  }
+
+  .hero-second-right {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .hero-second-right-certified {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    order: 1;
+  }
+
+  .main-certified {
+    margin-right: 0;
+  }
+
+  .hero-second-right-heading,
+  .hero-second-right-price-range {
+    width: 100%;
+  }
+
+  .hero-second-right-heading h1 {
+    font-size: 36px;
+  }
+
+  .hero-second-right-heading {
+    order: 2;
+  }
+
+  .hero-second-right-checkpoints {
+    order: 3;
+  }
+
+  .hero-second-left-bottom-white-image img{
+    height: 64px;
+    width: 64px;
+  }
+
+  .hero-second-right-price-range {
+    order: 6;
+    margin-top: 23px;
+  }
+
+  .price-tags,
+  .hero-second-right-quote-button {
+    flex-direction: column;
+  }
+
+  .hero-second-right-quote-button {
+    order: 7;
+  }
+
+  .hero-second-right-quote-button button {
+    width: 100%;
+  }
+
+  .magnifier-lens,
+  .magnifier-preview {
+    display: none !important;
+  }
+
+  .trusted-logos {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .trusted-logos img:nth-child(n + 4) {
+    display: none;
+  }
+
+  .trusted-logos img {
+    height: 26px;
   }
 
   .sticky-header-container {
