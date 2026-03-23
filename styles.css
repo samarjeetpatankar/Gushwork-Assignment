@@ -1048,6 +1048,7 @@ body {
 
 .trusted-performance-review {
   margin: 0;
+  flex: 0 0 420px;
   height: 420px;
   width: 420px;
   border: 1px solid #e1e3e8;
@@ -1104,9 +1105,22 @@ body {
 .reviews-container {
   display: flex;
   gap: 24px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   padding: 24px 0 50px;
   margin: 0 -100px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  scrollbar-width: none;
+}
+
+.reviews-container:active {
+  cursor: grabbing;
+}
+
+.reviews-container::-webkit-scrollbar {
+  display: none;
 }
 
 .complete-piping {
