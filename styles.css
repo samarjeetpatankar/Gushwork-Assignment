@@ -2063,7 +2063,18 @@ body {
   }
   .resources-and-Downloads-path-block-data-download{
     margin-top: 7px;
+    border-bottom: none;
   }
+  .resources-and-Downloads-path-block-data:nth-child(-n + 2) .resources-and-Downloads-path-block-data-download{
+    border-bottom: 1px solid #E1E3E8;
+    padding-bottom: 10px;
+  }
+  .ready-to-transform{
+     padding: 1px 14px 1px 14px;
+  }
+  /* .ready-to-transform-block-left h1{
+    width: 100%;
+  } */
 }
 
 /* 360 */
