@@ -1904,7 +1904,7 @@ body {
     height: 352px;
     padding: 26px;
   }
-  .trusted-performance-review-bottom{
+  .trusted-performance-review-bottom {
     margin-top: 15px;
   }
 
@@ -1967,114 +1967,156 @@ body {
   .faq-main {
     margin-top: 0px;
   }
-  .faq-heading h1{
+  .faq-heading h1 {
     margin-top: 40px;
     font-size: 36px;
   }
-  .faq-question{
+  .faq-question {
     font-weight: 500;
     width: 90%;
   }
-  .faq-card-email{
+  .faq-card-email {
     display: block;
   }
-  .faq-card-email-right{
+  .faq-card-email-right {
     margin-top: 10px;
     margin-bottom: 0px;
   }
-  .faq-card-email-right input{
+  .faq-card-email-right input {
     width: 100%;
   }
-  .faq-card-email-right button{
+  .faq-card-email-right button {
     width: 100%;
   }
-  .versatile-applications{
-     padding: 1px 14px 1px 14px;
+  .versatile-applications {
+    padding: 1px 14px 1px 14px;
   }
-  .versatile-applications-heading{
+  .versatile-applications-heading {
     width: 100%;
     margin-top: 45px;
   }
-  .versatile-applications-heading h1{
+  .versatile-applications-heading h1 {
     font-size: 36px;
   }
-  .versatile-applications-heading p{
+  .versatile-applications-heading p {
     font-size: 16px;
   }
-  .advanced-hdpe{
+  .advanced-hdpe {
     padding: 1px 14px 1px 14px;
   }
-  .advanced-hdpe-heading h1{
+  .advanced-hdpe-heading h1 {
     width: 100%;
     font-size: 36px;
     margin-top: 0px;
   }
-  .advanced-hdpe-heading p{
+  .advanced-hdpe-heading p {
     width: 100%;
     font-size: 16px;
   }
-  .trusted-performance{
+  .trusted-performance {
     padding: 1px 14px 1px 14px;
   }
-  .trusted-performance-heading h1{
+  .trusted-performance-heading h1 {
     width: 100%;
     font-size: 36px;
     margin-top: 0px;
   }
-  .trusted-performance-heading p{
+  .trusted-performance-heading p {
     width: 100%;
   }
-  .complete-piping{
+  .complete-piping {
     padding: 1px 14px 1px 14px;
   }
-  .complete-piping-heading{
+  .complete-piping-heading {
     margin-top: 20px;
   }
-  .complete-piping-heading h1{
+  .complete-piping-heading h1 {
     width: 100%;
     font-size: 36px;
   }
-  .complete-piping-heading p{
+  .complete-piping-heading p {
     font-size: 16px;
     width: 100%;
   }
-  .complete-piping-talk-to{
+  .complete-piping-talk-to {
     display: block;
   }
-  .talk-to-an-Expert-block{
+  .talk-to-an-Expert-block {
     width: 100%;
   }
-  .resources-and-Downloads{
-     padding: 1px 14px 1px 14px;
+  .resources-and-Downloads {
+    padding: 1px 14px 1px 14px;
   }
-  .resources-and-Downloads-heading{
+  .resources-and-Downloads-heading {
     margin-top: 30px;
   }
-  .resources-and-Downloads-heading h1{
+  .resources-and-Downloads-heading h1 {
     font-size: 36px;
     width: 100%;
   }
-  .resources-and-Downloads-heading p{
+  .resources-and-Downloads-heading p {
     width: 100%;
     font-size: 16px;
   }
-  .resources-and-Downloads-path-block-data{
+  .resources-and-Downloads-path-block-data {
     display: block;
   }
-  .resources-and-Downloads-path-block-data-download{
+  .resources-and-Downloads-path-block-data-download {
     margin-top: 7px;
     border-bottom: none;
   }
-  .resources-and-Downloads-path-block-data:nth-child(-n + 2) .resources-and-Downloads-path-block-data-download{
-    border-bottom: 1px solid #E1E3E8;
+  .resources-and-Downloads-path-block-data:nth-child(-n + 2)
+    .resources-and-Downloads-path-block-data-download {
+    border-bottom: 1px solid #e1e3e8;
     padding-bottom: 10px;
   }
-  .ready-to-transform{
-     padding: 1px 14px 1px 14px;
+  .ready-to-transform {
+    padding: 1px 14px 1px 14px;
   }
-  /* .ready-to-transform-block-left h1{
+  .ready-to-transform-block {
+    display: block;
+    height: auto;
+  }
+  .ready-to-transform-block-left h1 {
+    width: 100% !important;
+    font-size: 36px;
+  }
+  .ready-to-transform-block-left p {
+    width: 100% !important;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .ready-to-transform-block-left p:nth-of-type(2) {
+    width: 100% !important;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+  .ready-to-transform-block-right {
+    margin-left: 0px;
+  }
+  .form-box {
     width: 100%;
-  } */
+    margin-top: 30px;
+  }
+  .footer {
+    padding: 1px 14px 1px 14px;
+  }
+  .footer-top-block {
+    margin-top: 60px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-top-block p {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer-top-block-logo{
+    width: 87px;
+    height: 32px;
+  }
 }
 
 /* 360 */
