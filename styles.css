@@ -340,7 +340,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   width: 570px;
-  border: 1px solid #CFD1D4;
+  border: 1px solid #cfd1d4;
 }
 
 .price-title {
@@ -1732,7 +1732,7 @@ body {
     height: auto;
   }
 
-  .trusted-logos img{
+  .trusted-logos img {
     height: 30px;
   }
 
@@ -1771,7 +1771,7 @@ body {
     justify-content: center;
   }
 
-  .hero-bottom{
+  .hero-bottom {
     margin-top: 40px;
   }
   .hero-second-left-bottom-white-image img:nth-child(n + 5) {
@@ -1811,7 +1811,7 @@ body {
     order: 3;
   }
 
-  .hero-second-left-bottom-white-image img{
+  .hero-second-left-bottom-white-image img {
     height: 64px;
     width: 64px;
   }
@@ -1870,23 +1870,41 @@ body {
   .sticky-header-button {
     width: 100%;
   }
-  .technical-specifications{
+  .technical-specifications {
     padding: 1px 10px 0px 10px;
   }
-  .technical-specifications-heading{
+  .technical-specifications-heading {
     margin-top: 50px;
   }
-  .technical-specifications-heading h1{
+  .technical-specifications-heading h1 {
     font-size: 36px;
   }
-  .technical-specifications-heading h4{
+  .technical-specifications-heading h4 {
     width: 100%;
-    color: #FFFFFFCC;
+    color: #ffffffcc;
   }
-  .technical-specifications-button{
+  .technical-specifications-button {
     margin-bottom: 57px;
   }
-  
+  .built-to-last {
+    padding: 1px 10px 0px 10px;
+  }
+  .built-to-last-main {
+    margin-top: 0px;
+  }
+  .built-to-last-heading h1{
+    font-size: 34px;
+  }
+  .built-to-last-heading h4{
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .built-to-last-cards{
+    margin-top: 20px;
+  }
+  .built-to-last-button{
+    margin-bottom: 45px;
+  }
 }
 
 /* 360 */
