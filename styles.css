@@ -1870,6 +1870,23 @@ body {
   .sticky-header-button {
     width: 100%;
   }
+  .technical-specifications{
+    padding: 1px 10px 0px 10px;
+  }
+  .technical-specifications-heading{
+    margin-top: 50px;
+  }
+  .technical-specifications-heading h1{
+    font-size: 36px;
+  }
+  .technical-specifications-heading h4{
+    width: 100%;
+    color: #FFFFFFCC;
+  }
+  .technical-specifications-button{
+    margin-bottom: 57px;
+  }
+  
 }
 
 /* 360 */
