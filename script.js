@@ -104,3 +104,111 @@ if (siteHeader && heroSection) {
 
   updateStickyHeader();
 }
+
+const versatileApplicationsCarouselList = document.querySelector(
+  ".versatile-applications-carousel-list",
+);
+const versatileApplicationsArrowLeft = document.querySelector(
+  ".versatile-applications-arrow-left",
+);
+const versatileApplicationsArrowRight = document.querySelector(
+  ".versatile-applications-arrow-right",
+);
+
+if (
+  versatileApplicationsCarouselList &&
+  versatileApplicationsArrowLeft &&
+  versatileApplicationsArrowRight
+) {
+  let isAnimating = false;
+
+  const getSlideDistance = () => {
+    const slide = versatileApplicationsCarouselList.querySelector(
+      ".versatile-applications-carousel",
+    );
+
+    if (!slide) {
+      return 0;
+    }
+
+    const slideWidth = slide.getBoundingClientRect().width;
+    const styles = window.getComputedStyle(versatileApplicationsCarouselList);
+    const gap = parseFloat(styles.columnGap || styles.gap || "0");
+
+    return slideWidth + gap;
+  };
+
+  const resetTrackPosition = () => {
+    versatileApplicationsCarouselList.style.transition = "none";
+    versatileApplicationsCarouselList.style.transform = "translateX(0)";
+  };
+
+  const moveCarousel = (direction) => {
+    if (isAnimating) {
+      return;
+    }
+
+    const slideDistance = getSlideDistance();
+
+    if (!slideDistance) {
+      return;
+    }
+
+    isAnimating = true;
+
+    if (direction === -1) {
+      const lastSlide = versatileApplicationsCarouselList.lastElementChild;
+
+      if (lastSlide) {
+        versatileApplicationsCarouselList.insertBefore(
+          lastSlide,
+          versatileApplicationsCarouselList.firstElementChild,
+        );
+      }
+
+      versatileApplicationsCarouselList.style.transition = "none";
+      versatileApplicationsCarouselList.style.transform = `translateX(-${slideDistance}px)`;
+
+      window.requestAnimationFrame(() => {
+        versatileApplicationsCarouselList.style.transition =
+          "transform 0.35s ease";
+        versatileApplicationsCarouselList.style.transform = "translateX(0)";
+      });
+    } else {
+      versatileApplicationsCarouselList.style.transition =
+        "transform 0.35s ease";
+      versatileApplicationsCarouselList.style.transform = `translateX(-${slideDistance}px)`;
+    }
+
+    window.setTimeout(() => {
+      versatileApplicationsCarouselList.style.transition = "none";
+
+      if (direction === 1) {
+        const firstSlide =
+          versatileApplicationsCarouselList.firstElementChild;
+
+        if (firstSlide) {
+          versatileApplicationsCarouselList.appendChild(firstSlide);
+        }
+      }
+
+      versatileApplicationsCarouselList.style.transform = "translateX(0)";
+
+      window.requestAnimationFrame(() => {
+        isAnimating = false;
+      });
+    }, 350);
+  };
+
+  versatileApplicationsArrowLeft.addEventListener("click", () => {
+    moveCarousel(-1);
+  });
+
+  versatileApplicationsArrowRight.addEventListener("click", () => {
+    moveCarousel(1);
+  });
+
+  window.addEventListener("resize", resetTrackPosition);
+
+  resetTrackPosition();
+}

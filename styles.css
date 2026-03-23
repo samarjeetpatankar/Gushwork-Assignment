@@ -819,12 +819,18 @@ body {
   width: 68px;
 }
 
+.versatile-applications-arrow {
+  cursor: pointer;
+  user-select: none;
+}
+
 .versatile-applications-carousel-list {
   display: flex;
   gap: 24px;
   overflow: hidden;
   padding: 24px 0 50px;
   margin: 0 -100px;
+  will-change: transform;
 }
 
 .versatile-applications-carousel {
@@ -912,6 +918,7 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   margin-top: 23px;
   position: relative;
+  margin-bottom: 70px;
 }
 
 .advanced-hdpe-block-highlighted {
