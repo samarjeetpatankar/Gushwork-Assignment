@@ -209,11 +209,29 @@ body {
   display: flex;
 }
 
+.image-magnifier-container {
+  position: relative;
+  display: inline-block;
+}
+
 .hero-second-left-image {
   height: 570px;
   width: 570px;
   margin-left: -30px;
+  cursor: zoom-in;
 }
+
+.magnifier-lens {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  pointer-events: none;
+  display: none;
+}
+
 
 .hero-second-left-bottom-white-image {
   margin-top: -30px;

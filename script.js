@@ -1,3 +1,23 @@
+const container = document.querySelector(".image-magnifier-container");
+const lens = document.querySelector(".magnifier-lens");
+
+container.addEventListener("mousemove", moveLens);
+container.addEventListener("mouseenter", () => {
+  lens.style.display = "block";
+});
+container.addEventListener("mouseleave", () => {
+  lens.style.display = "none";
+});
+
+function moveLens(e) {
+  const rect = container.getBoundingClientRect();
+  let x = e.clientX - rect.left - lens.offsetWidth / 2;
+  let y = e.clientY - rect.top - lens.offsetHeight / 2;
+
+  lens.style.left = x + "px";
+  lens.style.top = y + "px";
+}
+
 const siteHeader = document.getElementById("site-header");
 const heroSection = document.querySelector(".hero-section");
 
@@ -14,7 +34,10 @@ if (siteHeader && heroSection) {
   };
 
   const updateStickyHeader = () => {
-    const triggerPoint = Math.max(heroSection.offsetHeight - window.innerHeight, 0);
+    const triggerPoint = Math.max(
+      heroSection.offsetHeight - window.innerHeight,
+      0,
+    );
     const shouldStick = window.scrollY > triggerPoint;
 
     siteHeader.classList.toggle("is-sticky", shouldStick);
