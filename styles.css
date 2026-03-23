@@ -1867,6 +1867,47 @@ body {
     margin-top: 0;
   }
 
+  .versatile-applications-carousel-list {
+    gap: 18px;
+  }
+
+  .versatile-applications-carousel {
+    flex: 0 0 294px;
+    width: 294px;
+  }
+
+  .versatile-applications-carousel-image {
+    height: 294px;
+    width: 294px;
+  }
+
+  .carousel-text {
+    bottom: 14px;
+    left: 14px;
+    padding: 8px 12px;
+    max-width: calc(100% - 28px);
+  }
+
+  .carousel-text h1 {
+    font-size: 20px;
+  }
+
+  .carousel-text p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .trusted-performance-review {
+    flex: 0 0 336px;
+    width: 336px;
+    height: 352px;
+    padding: 26px;
+  }
+  .trusted-performance-review-bottom{
+    margin-top: 15px;
+  }
+
   .sticky-header-container {
     flex-direction: column;
     align-items: flex-start;
@@ -1959,6 +2000,69 @@ body {
   }
   .versatile-applications-heading p{
     font-size: 16px;
+  }
+  .advanced-hdpe{
+    padding: 1px 14px 1px 14px;
+  }
+  .advanced-hdpe-heading h1{
+    width: 100%;
+    font-size: 36px;
+    margin-top: 0px;
+  }
+  .advanced-hdpe-heading p{
+    width: 100%;
+    font-size: 16px;
+  }
+  .trusted-performance{
+    padding: 1px 14px 1px 14px;
+  }
+  .trusted-performance-heading h1{
+    width: 100%;
+    font-size: 36px;
+    margin-top: 0px;
+  }
+  .trusted-performance-heading p{
+    width: 100%;
+  }
+  .complete-piping{
+    padding: 1px 14px 1px 14px;
+  }
+  .complete-piping-heading{
+    margin-top: 20px;
+  }
+  .complete-piping-heading h1{
+    width: 100%;
+    font-size: 36px;
+  }
+  .complete-piping-heading p{
+    font-size: 16px;
+    width: 100%;
+  }
+  .complete-piping-talk-to{
+    display: block;
+  }
+  .talk-to-an-Expert-block{
+    width: 100%;
+  }
+  .resources-and-Downloads{
+     padding: 1px 14px 1px 14px;
+  }
+  .resources-and-Downloads-heading{
+    margin-top: 30px;
+  }
+  .resources-and-Downloads-heading h1{
+    font-size: 36px;
+    width: 100%;
+  }
+  .resources-and-Downloads-heading p{
+    width: 100%;
+    font-size: 16px;
+  }
+  .resources-and-Downloads-path-block-data{
+    display: block;
+  }
+  .resources-and-Downloads-path-block-data-download{
+    margin-top: 7px;
   }
 }
 
