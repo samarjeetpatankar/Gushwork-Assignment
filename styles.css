@@ -1211,6 +1211,140 @@
   margin-top: -2px;
 }
 
+.ready-to-transform {
+  background-image: url("./images/built_to_last_background.png");
+  background-size: cover;
+  background-position: center;
+  color: #0d0d0d;
+  padding: 0 100px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e1e3e8;
+}
+
+.ready-to-transform-main {
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.ready-to-transform-block {
+  margin-top: 70px;
+  border: 1px solid #00000033;
+  border-radius: 32px;
+  padding: 25px 20px;
+  background:
+    linear-gradient(0deg, #2b3990, #2b3990),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  box-shadow: 0px 16px 40px -8px #585c5f29;
+  margin-bottom: 70px;
+  display: flex;
+  height: 472px;
+}
+
+.ready-to-transform-block-left {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 12px;
+}
+
+.ready-to-transform-block-left h1 {
+  font-size: 48px;
+  color: #ffffff;
+  width: 600px;
+}
+
+.ready-to-transform-block-left p {
+  font-size: 18px;
+  color: #ffffffcc;
+  width: 600px;
+  margin-top: 23px;
+  margin-left: 5px;
+}
+
+.ready-to-transform-block-left p:nth-of-type(2) {
+  font-size: 14px;
+  color: #ffffffcc;
+  width: 600px;
+  margin-top: 50px;
+  margin-left: 5px;
+  border-top: 1.25px solid #ffffff33;
+  padding-top: 12px;
+}
+
+.ready-to-transform-block-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 100px;
+  width: 100%;
+}
+
+.form-box {
+  background: #f7f8f9;
+  padding: 28px;
+  border-radius: 20px;
+  width: 86%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ready-to-transform-block-right h3 {
+  color: #262a2e;
+  margin-bottom: 3px;
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.form-box input,
+.phone-input,
+.form-box select {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #e1e3e8;
+  padding: 0 14px;
+  font-size: 14px;
+  outline: none;
+  background: #ffffff;
+  color: #959ba4;
+}
+
+.phone-input {
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+}
+
+.phone-input select {
+  border: none;
+  background: transparent;
+  padding: 0 10px;
+}
+
+.phone-input input {
+  border: none;
+  flex: 1;
+  background: transparent;
+}
+
+.form-box button {
+  margin-top: 10px;
+  height: 44px;
+  background: #262a2e;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 /* 1600 & 1440 */
 @media (max-width: 1600px) {
   .navbar {
