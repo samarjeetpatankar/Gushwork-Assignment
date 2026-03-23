@@ -2106,6 +2106,7 @@ body {
     margin-top: 60px;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .footer-top-block p {
     width: 100%;
@@ -2113,9 +2114,28 @@ body {
     text-align: center;
     margin-top: 10px;
   }
-  .footer-top-block-logo{
+  .footer-top-block-logo {
     width: 87px;
     height: 32px;
+  }
+  .footer-top-table {
+    display: block;
+  }
+  .footer-data h1 {
+    margin-top: 20px;
+  }
+  .contact-data h1 {
+    margin-top: 20px;
+  }
+  .contact-data {
+    width: 100%;
+  }
+  .footer-main{
+    margin-bottom: 30px;
+  }
+  .last-block-main{
+     padding: 1px 14px 1px 14px;
+     display: block;
   }
 }
 
