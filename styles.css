@@ -1081,11 +1081,12 @@
   padding: 25px 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  margin-top: 23px;
+  margin-top: 39px;
   position: relative;
   display: flex;
   justify-content: space-between;
   font-family: "Vert Grotesk Display", sans-serif !important;
+  margin-bottom: 70px;
 }
 
 .complete-piping-talk-to-left h3 {
@@ -1115,12 +1116,99 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 7px;
 }
 
 .talk-to-an-Expert-block img {
   height: 20px;
   width: 20px;
   margin-right: 10px;
+}
+
+.resources-and-Downloads {
+  background-image: url("./images/built_to_last_background.png");
+  background-size: cover;
+  background-position: center;
+  color: #0d0d0d;
+  padding: 0 100px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e1e3e8;
+}
+
+.resources-and-Downloads-main {
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.resources-and-Downloads-heading {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.resources-and-Downloads-heading h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0d0d0d;
+  margin: 20px auto 0;
+  width: 790px;
+}
+
+.resources-and-Downloads-heading p {
+  font-size: 18px;
+  color: #4d545c;
+  margin: 20px auto 0;
+  text-align: center;
+  width: 720px;
+}
+
+.resources-and-Downloads-path-block {
+  border: 1px solid #cfd1d4;
+  border-radius: 10px;
+  padding: 25px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 39px;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.resources-and-Downloads-path-block-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.resources-and-Downloads-path-block-data-extra {
+  margin-top: 15px;
+}
+
+.resources-and-Downloads-path-block-data h2 {
+  font-size: 16px;
+  color: #0d0d0d;
+  font-weight: 500;
+}
+
+.resources-and-Downloads-path-block-data-download {
+  display: flex;
+  flex-direction: row;
+}
+
+.resources-and-Downloads-path-block-data-download p {
+  font-size: 16px;
+  color: #2b3990;
+  font-weight: 600;
+  margin-right: 7px;
+}
+
+.resources-and-Downloads-path-block-data-download img {
+  height: 24px;
+  width: 24px;
+  margin-top: -2px;
 }
 
 /* 1600 & 1440 */
