@@ -1408,7 +1408,11 @@
   color: #535a61;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 12px;
+  margin-top: 15px;
+}
+
+.contact-data {
+  width: 30%;
 }
 
 .contact-data h1 {
@@ -1477,6 +1481,35 @@
   display: block;
   height: 16px;
   width: 16px;
+}
+
+.last-block-main {
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.last-block-main-left p {
+  font-size: 12px;
+  color: #535a61;
+}
+
+.last-block-main-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.last-block-main-right p {
+  font-size: 12px;
+  color: #535a61;
 }
 
 /* 1600 & 1440 */
