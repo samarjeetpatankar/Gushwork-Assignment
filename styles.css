@@ -1345,6 +1345,53 @@
   cursor: pointer;
 }
 
+.footer {
+  background-image: url("./images/built_to_last_background.png");
+  background-size: cover;
+  background-position: center;
+  color: #0d0d0d;
+  padding: 0 100px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e1e3e8;
+}
+
+.footer-main {
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer-top-block {
+  margin-top: 90px;
+  border: 1px solid #00000033;
+  border-radius: 20px;
+  padding: 20px 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 16px 40px -8px #585c5f29;
+  margin-bottom: 70px;
+  display: flex;
+  height: 122px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top-block-logo {
+  height: 40px;
+  width: 109px;
+  margin-left: 10px;
+}
+
+.footer-top-block p {
+  font-size: 24px;
+  color: #0d0d0d;
+  font-weight: 600;
+  width: 374px;
+  margin-right: 20px;
+}
+
 /* 1600 & 1440 */
 @media (max-width: 1600px) {
   .navbar {
