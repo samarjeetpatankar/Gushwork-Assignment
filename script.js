@@ -1,3 +1,4 @@
+// Product image magnifier used in the hero gallery on desktop.
 const container = document.querySelector(".image-magnifier-container");
 const lens = document.querySelector(".magnifier-lens");
 const magnifierImage = document.querySelector(".hero-second-left-image");
@@ -7,6 +8,7 @@ if (container && lens && magnifierImage && preview) {
   const zoomLevel = 2.5;
   let isMagnifierActive = false;
 
+  // Keep the preview background in sync with the rendered image size.
   const updatePreviewSize = () => {
     preview.style.backgroundImage = `url("${magnifierImage.src}")`;
     preview.style.backgroundSize = `${magnifierImage.offsetWidth * zoomLevel}px ${magnifierImage.offsetHeight * zoomLevel}px`;
@@ -42,6 +44,7 @@ if (container && lens && magnifierImage && preview) {
     let x = e.clientX - rect.left - lens.offsetWidth / 2;
     let y = e.clientY - rect.top - lens.offsetHeight / 2;
 
+    // Clamp the lens so it never leaves the visible image area.
     x = Math.max(0, Math.min(x, maxX));
     y = Math.max(0, Math.min(y, maxY));
 
@@ -57,10 +60,12 @@ if (container && lens && magnifierImage && preview) {
   }
 }
 
+// Sticky header that pins on scroll and hides while scrolling upward.
 const siteHeader = document.getElementById("site-header");
 if (siteHeader) {
   let lastScrollY = window.scrollY;
 
+  // Reserve layout space when the header becomes fixed.
   const setHeaderOffset = () => {
     const offset = siteHeader.classList.contains("is-sticky")
       ? `${siteHeader.offsetHeight}px`
@@ -92,6 +97,7 @@ if (siteHeader) {
 
   let ticking = false;
 
+  // Throttle scroll work to animation frames for smoother updates.
   const handleScroll = () => {
     if (ticking) {
       return;
@@ -112,6 +118,7 @@ if (siteHeader) {
   updateStickyHeader();
 }
 
+// Carousel controls for the applications section.
 const versatileApplicationsCarouselList = document.querySelector(
   ".versatile-applications-carousel-list",
 );
@@ -129,6 +136,7 @@ if (
 ) {
   let isAnimating = false;
 
+  // Measure one slide plus the CSS gap so each click advances exactly one card.
   const getSlideDistance = () => {
     const slide = versatileApplicationsCarouselList.querySelector(
       ".versatile-applications-carousel",
@@ -150,6 +158,7 @@ if (
     versatileApplicationsCarouselList.style.transform = "translateX(0)";
   };
 
+  // Reorder slides before or after the transition to simulate an infinite loop.
   const moveCarousel = (direction) => {
     if (isAnimating) {
       return;
@@ -220,6 +229,7 @@ if (
   resetTrackPosition();
 }
 
+// Technical datasheet modal open/close behavior.
 const technicalDatasheetTrigger = document.querySelector(
   ".technical-datasheet-trigger",
 );
@@ -263,6 +273,7 @@ if (technicalDatasheetTrigger && technicalDatasheetModal) {
   });
 }
 
+// Callback modal open/close behavior.
 const callbackModalTrigger = document.querySelector(".callback-modal-trigger");
 const callbackModal = document.getElementById("callback-modal");
 

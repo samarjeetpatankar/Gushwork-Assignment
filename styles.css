@@ -5,6 +5,7 @@
   font-family: "Urbanist", sans-serif;
 }
 
+/* Shared theme variables and responsive background asset switching. */
 :root {
   --sticky-header-offset: 0px;
   --page-background-image: url("./images/built_to_last_background_desktop.jpg");
@@ -33,7 +34,7 @@ body {
   font-display: swap;
 }
 
-/* Header */
+/* Header and sticky navigation */
 .site-header {
   position: relative;
   z-index: 1000;
@@ -117,7 +118,7 @@ body {
   cursor: pointer;
 }
 
-/* Navbar */
+/* Primary navbar layout */
 .navbar {
   height: 77px;
   border-bottom: 2px solid #e5e5e5;
@@ -126,7 +127,7 @@ body {
   background: transparent;
 }
 
-/* Container */
+/* Shared centered container */
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -136,13 +137,13 @@ body {
   align-items: center;
 }
 
-/* Logo */
+/* Brand mark */
 .logo {
   height: 45px;
   width: 109px;
 }
 
-/* Right Nav */
+/* Desktop navigation links */
 .nav-right {
   display: flex;
   align-items: center;
@@ -162,7 +163,7 @@ body {
   margin-left: 10px;
 }
 
-/* Button */
+/* Primary contact button */
 .contact-us-button {
   background-color: #2b3990;
   color: #ffffff;
@@ -176,6 +177,7 @@ body {
   height: 44px;
 }
 
+/* Hero banner and product summary */
 .hero-section {
   position: relative;
   width: 100%;
@@ -462,6 +464,7 @@ body {
   height: 40px;
 }
 
+/* Technical specification table and download CTA */
 .technical-specifications {
   background-color: #111827;
   color: #ffffff;
@@ -564,6 +567,7 @@ body {
   margin-right: 10px;
 }
 
+/* Technical datasheet modal */
 .technical-datasheet-modal {
   position: fixed;
   inset: 0;
@@ -690,6 +694,7 @@ body {
   cursor: pointer;
 }
 
+/* Callback modal */
 .callback-modal {
   position: fixed;
   inset: 0;
@@ -857,6 +862,7 @@ body {
   padding: 0 14px;
 }
 
+/* Benefit cards section */
 .built-to-last {
   background-color: #f8fafc;
   background-image: var(--page-background-image);
@@ -948,6 +954,7 @@ body {
   height: 52px;
 }
 
+/* FAQ and email capture panel */
 .faq {
   background-color: #f8fafc;
   background-image: var(--page-background-image);
@@ -1082,6 +1089,7 @@ body {
   margin-top: 12px;
 }
 
+/* Applications carousel */
 .versatile-applications {
   background-color: #f8fafc;
   background-image: var(--page-background-image);
@@ -1188,6 +1196,7 @@ body {
   line-height: 20px;
 }
 
+/* Process overview section */
 .advanced-hdpe {
   background-color: #f8fafc;
   background-image: var(--page-background-image);
@@ -1347,6 +1356,7 @@ body {
   height: 15px;
 }
 
+/* Testimonial slider area */
 .trusted-performance {
   background-color: #f8fafc;
   background-image: var(--page-background-image);
@@ -1465,6 +1475,7 @@ body {
   display: none;
 }
 
+/* Related products and expert CTA */
 .complete-piping {
   background-color: #f8fafc;
   background-image: var(--page-background-image);
@@ -1612,6 +1623,7 @@ body {
   margin-right: 10px;
 }
 
+/* Resources and downloads list */
 .resources-and-Downloads {
   background-color: #f8fafc;
   background-image: var(--page-background-image);
@@ -1699,6 +1711,7 @@ body {
   margin-top: -2px;
 }
 
+/* Final lead form section */
 .ready-to-transform {
   background-color: #f8fafc;
   background-image: var(--page-background-image);
@@ -1834,6 +1847,7 @@ body {
   cursor: pointer;
 }
 
+/* Footer content */
 .footer {
   background-color: #f8fafc;
   background-image: var(--page-background-image);
@@ -2002,7 +2016,7 @@ body {
   color: #535a61;
 }
 
-/* 1600 & 1440 */
+/* Large desktop spacing adjustments */
 @media (max-width: 1600px) {
   .site-header {
     padding: 0 100px;
@@ -2024,7 +2038,7 @@ body {
   }
 }
 
-/* 1200 */
+/* Desktop-to-laptop adjustments */
 @media (max-width: 1200px) {
   .site-header {
     padding: 0 80px;
@@ -2041,7 +2055,7 @@ body {
   }
 }
 
-/* 1080 */
+/* Small laptop spacing adjustments */
 @media (max-width: 1080px) {
   .site-header {
     padding: 0 60px;
@@ -2054,7 +2068,7 @@ body {
   }
 }
 
-/* 800 */
+/* Tablet and mobile layout changes */
 @media (max-width: 800px) {
   .site-header {
     padding: 0 10px;
@@ -2604,7 +2618,7 @@ body {
   }
 }
 
-/* 360 */
+/* Very small mobile adjustments */
 @media (max-width: 360px) {
   .site-header {
     padding: 0 16px;
