@@ -959,7 +959,25 @@ body {
 .advanced-hdpe-block-dash {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.advanced-hdpe-block-dash p {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.advanced-hdpe-block-dash p:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 9px);
+  width: 20px;
+  height: 1px;
+  background-color: #cfd1d4;
+  transform: translateY(-50%);
+  margin-left: -9px;
 }
 
 .advanced-hdpe-block-bottom {
