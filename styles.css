@@ -7,11 +7,20 @@
 
 :root {
   --sticky-header-offset: 0px;
+  --page-background-image: url("./images/built_to_last_background_desktop.jpg");
+  --hero-background-image: url("./images/main_background_desktop.jpg");
 }
 
 body {
   padding-top: var(--sticky-header-offset);
   transition: padding-top 0.35s ease;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --page-background-image: url("./images/built_to_last_background_mobile.jpg");
+    --hero-background-image: url("./images/main_background_mobile.jpg");
+  }
 }
 
 @font-face {
@@ -170,7 +179,8 @@ body {
 .hero-section {
   position: relative;
   width: 100%;
-  background-image: url("./images/main_background.png");
+  background-color: #eef2f7;
+  background-image: var(--hero-background-image);
   background-size: cover;
   background-position: center;
   height: 1065px;
@@ -848,7 +858,8 @@ body {
 }
 
 .built-to-last {
-  background-image: url("./images/built_to_last_background.png");
+  background-color: #f8fafc;
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   color: #0d0d0d;
@@ -938,7 +949,8 @@ body {
 }
 
 .faq {
-  background-image: url("./images/built_to_last_background.png");
+  background-color: #f8fafc;
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   color: #0d0d0d;
@@ -1071,7 +1083,8 @@ body {
 }
 
 .versatile-applications {
-  background-image: url("./images/built_to_last_background.png");
+  background-color: #f8fafc;
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   color: #0d0d0d;
@@ -1176,7 +1189,8 @@ body {
 }
 
 .advanced-hdpe {
-  background-image: url("./images/built_to_last_background.png");
+  background-color: #f8fafc;
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   color: #0d0d0d;
@@ -1334,7 +1348,8 @@ body {
 }
 
 .trusted-performance {
-  background-image: url("./images/built_to_last_background.png");
+  background-color: #f8fafc;
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   color: #0d0d0d;
@@ -1451,7 +1466,8 @@ body {
 }
 
 .complete-piping {
-  background-image: url("./images/built_to_last_background.png");
+  background-color: #f8fafc;
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   color: #0d0d0d;
@@ -1597,7 +1613,8 @@ body {
 }
 
 .resources-and-Downloads {
-  background-image: url("./images/built_to_last_background.png");
+  background-color: #f8fafc;
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   color: #0d0d0d;
@@ -1683,7 +1700,8 @@ body {
 }
 
 .ready-to-transform {
-  background-image: url("./images/built_to_last_background.png");
+  background-color: #f8fafc;
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   color: #0d0d0d;
@@ -1817,7 +1835,8 @@ body {
 }
 
 .footer {
-  background-image: url("./images/built_to_last_background.png");
+  background-color: #f8fafc;
+  background-image: var(--page-background-image);
   background-size: cover;
   background-position: center;
   color: #0d0d0d;
