@@ -214,11 +214,45 @@
           </div>
 
           <div class="technical-specifications-button">
-            <button>
+            <button
+              type="button"
+              class="technical-datasheet-trigger"
+              aria-haspopup="dialog"
+              aria-controls="technical-datasheet-modal"
+            >
               <img src="./images/download.png" alt="Download" /> Download Full
               Technical Datasheet
             </button>
           </div>
+        </div>
+      </div>
+
+      <div
+        class="technical-datasheet-modal"
+        id="technical-datasheet-modal"
+        aria-hidden="true"
+      >
+        <div class="technical-datasheet-modal-overlay" data-modal-close></div>
+        <div
+          class="technical-datasheet-modal-content"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="technical-datasheet-modal-title"
+        >
+          <button
+            type="button"
+            class="technical-datasheet-modal-close"
+            aria-label="Close popup"
+            data-modal-close
+          >
+            &times;
+          </button>
+          <p
+            class="technical-datasheet-modal-title"
+            id="technical-datasheet-modal-title"
+          >
+            Let us email the entire catalogue to you
+          </p>
         </div>
       </div>
 

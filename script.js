@@ -219,3 +219,46 @@ if (
 
   resetTrackPosition();
 }
+
+const technicalDatasheetTrigger = document.querySelector(
+  ".technical-datasheet-trigger",
+);
+const technicalDatasheetModal = document.getElementById(
+  "technical-datasheet-modal",
+);
+
+if (technicalDatasheetTrigger && technicalDatasheetModal) {
+  const technicalDatasheetCloseButtons =
+    technicalDatasheetModal.querySelectorAll("[data-modal-close]");
+
+  const openTechnicalDatasheetModal = () => {
+    technicalDatasheetModal.classList.add("is-open");
+    technicalDatasheetModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeTechnicalDatasheetModal = () => {
+    technicalDatasheetModal.classList.remove("is-open");
+    technicalDatasheetModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  technicalDatasheetTrigger.addEventListener("click", () => {
+    openTechnicalDatasheetModal();
+  });
+
+  technicalDatasheetCloseButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      closeTechnicalDatasheetModal();
+    });
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      technicalDatasheetModal.classList.contains("is-open")
+    ) {
+      closeTechnicalDatasheetModal();
+    }
+  });
+}
