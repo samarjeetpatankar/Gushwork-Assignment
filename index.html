@@ -380,8 +380,57 @@
           </div>
 
           <div class="built-to-last-button">
-            <button>Request a Quote</button>
+            <button
+              type="button"
+              class="callback-modal-trigger"
+              aria-haspopup="dialog"
+              aria-controls="callback-modal"
+            >
+              Request a Quote
+            </button>
           </div>
+        </div>
+      </div>
+
+      <div class="callback-modal" id="callback-modal" aria-hidden="true">
+        <div class="callback-modal-overlay" data-callback-modal-close></div>
+        <div
+          class="callback-modal-content"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="callback-modal-title"
+        >
+          <button
+            type="button"
+            class="callback-modal-close"
+            aria-label="Close popup"
+            data-callback-modal-close
+          >
+            &times;
+          </button>
+
+          <p class="callback-modal-title" id="callback-modal-title">
+            Request a call back
+          </p>
+
+          <form class="callback-modal-form">
+            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Company Name" />
+            <input type="email" placeholder="Email Address" />
+
+            <div class="callback-modal-phone">
+              <select aria-label="Country code">
+                <option>+91</option>
+              </select>
+              <input type="tel" placeholder="7003026616" />
+            </div>
+
+            <div class="callback-modal-actions">
+              <button type="submit" class="callback-modal-submit">
+                Submit Form
+              </button>
+            </div>
+          </form>
         </div>
       </div>
 

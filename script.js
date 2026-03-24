@@ -262,3 +262,40 @@ if (technicalDatasheetTrigger && technicalDatasheetModal) {
     }
   });
 }
+
+const callbackModalTrigger = document.querySelector(".callback-modal-trigger");
+const callbackModal = document.getElementById("callback-modal");
+
+if (callbackModalTrigger && callbackModal) {
+  const callbackModalCloseButtons = callbackModal.querySelectorAll(
+    "[data-callback-modal-close]",
+  );
+
+  const openCallbackModal = () => {
+    callbackModal.classList.add("is-open");
+    callbackModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeCallbackModal = () => {
+    callbackModal.classList.remove("is-open");
+    callbackModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  callbackModalTrigger.addEventListener("click", () => {
+    openCallbackModal();
+  });
+
+  callbackModalCloseButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      closeCallbackModal();
+    });
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && callbackModal.classList.contains("is-open")) {
+      closeCallbackModal();
+    }
+  });
+}
