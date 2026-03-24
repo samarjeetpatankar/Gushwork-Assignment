@@ -997,6 +997,10 @@ body {
   justify-content: center;
 }
 
+.advanced-hdpe-block-mobile-navigation {
+  display: none;
+}
+
 .advanced-hdpe-block-bottom-left h1 {
   font-size: 28px;
   color: #0d0d0d;
@@ -2030,6 +2034,72 @@ body {
   .advanced-hdpe-heading p {
     width: 100%;
     font-size: 16px;
+  }
+  .advanced-hdpe-block {
+    padding: 20px 16px 24px;
+  }
+  .advanced-hdpe-block-dash {
+    justify-content: left;
+    margin-top: 0px;
+  }
+  .advanced-hdpe-block-dash .advanced-hdpe-block-normal {
+    display: none;
+  }
+  .advanced-hdpe-block-dash .advanced-hdpe-block-highlighted {
+    width: auto;
+    padding: 0 18px;
+    font-size: 0;
+    justify-content: flex-start;
+  }
+  .advanced-hdpe-block-dash .advanced-hdpe-block-highlighted::before {
+    content: "Step 1/8: Raw Material";
+    font-size: 14px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .advanced-hdpe-block-dash
+    .advanced-hdpe-block-highlighted:not(:last-child)::after {
+    display: none;
+  }
+  .advanced-hdpe-block-bottom {
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 20px;
+  }
+  .advanced-hdpe-block-bottom-left h1,
+  .advanced-hdpe-block-bottom-left-text {
+    width: 100%;
+  }
+  .advanced-hdpe-block-bottom-left h1 {
+    font-size: 24px;
+  }
+  .advanced-hdpe-block-bottom-right img {
+    width: 100%;
+    height: auto;
+  }
+  .advanced-hdpe-block-mobile-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .advanced-hdpe-block-mobile-navigation .advanced-hdpe-block-normal {
+    flex-shrink: 0;
+    width: 100px;
+  }
+  .advanced-hdpe-block-mobile-navigation-dash {
+    flex: 1;
+    height: 1px;
+    background-color: #cfd1d4;
+  }
+  .prev {
+    height: 12px;
+    width: 65px;
+  }
+  .next {
+    height: 12px;
+    width: 50px;
   }
   .trusted-performance {
     padding: 1px 14px 1px 14px;
