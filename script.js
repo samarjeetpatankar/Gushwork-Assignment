@@ -58,9 +58,9 @@ if (container && lens && magnifierImage && preview) {
 }
 
 const siteHeader = document.getElementById("site-header");
-const heroSection = document.querySelector(".hero-section");
+if (siteHeader) {
+  let lastScrollY = window.scrollY;
 
-if (siteHeader && heroSection) {
   const setHeaderOffset = () => {
     const offset = siteHeader.classList.contains("is-sticky")
       ? `${siteHeader.offsetHeight}px`
@@ -73,14 +73,21 @@ if (siteHeader && heroSection) {
   };
 
   const updateStickyHeader = () => {
-    const triggerPoint = Math.max(
-      heroSection.offsetHeight - window.innerHeight,
-      0,
-    );
-    const shouldStick = window.scrollY > triggerPoint;
+    const currentScrollY = window.scrollY;
+    const shouldStick = currentScrollY > 0;
+    const isScrollingUp = currentScrollY < lastScrollY;
 
     siteHeader.classList.toggle("is-sticky", shouldStick);
+
+    if (!shouldStick) {
+      siteHeader.classList.remove("is-hidden");
+    } else {
+      siteHeader.classList.toggle("is-hidden", isScrollingUp);
+    }
+
     setHeaderOffset();
+
+    lastScrollY = currentScrollY;
   };
 
   let ticking = false;

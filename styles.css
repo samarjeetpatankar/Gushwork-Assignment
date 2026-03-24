@@ -43,6 +43,10 @@ body {
   box-shadow: 0 16px 40px rgba(17, 24, 39, 0.12);
 }
 
+.site-header.is-hidden {
+  transform: translateY(-100%);
+}
+
 .sticky-header-bar {
   overflow: hidden;
   max-height: 0;
